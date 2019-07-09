@@ -189,6 +189,7 @@ gg.clearResults()
 end
 
 function COLSNAP435()
+gg.alert("Manual Edit Color Value 3-7")
 gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
 gg.searchNumber("1.3912525e-19F;8200;96",gg.TYPE_DWORD, false,gg.SIGN_EQUAL, 0, -1)
@@ -557,11 +558,7 @@ if XS[4] == true then
   end
 
 function SIT()
-gg.setRanges(32)
-gg.searchNumber("1,100,159,584", 4, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("1,135,199,584", 4)
-gg.clearResults()
+gg.alert("Maintance Fixing Bugs")
 end
 
 function STA()
