@@ -189,7 +189,6 @@ gg.clearResults()
 end
 
 function COLSNAP435()
-gg.alert("Manual Edit Color Value 3-7")
 gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
 gg.searchNumber("1.3912525e-19F;8200;96",gg.TYPE_DWORD, false,gg.SIGN_EQUAL, 0, -1)
@@ -199,7 +198,13 @@ gg.editAll("6",gg.TYPE_DWORD)
 end
 
 function COLSNAP625()
-gg.alert("Maintance Fixing Bugs")
+gg.setRanges(131072)
+gg.searchNumber("32769", 4, false, 536870912, 0, -1)
+gg.refineNumber("32769", 4, false, 536870912, 0, -1)
+gg.refineAddress("518")
+gg.getResults(9999)
+gg.editAll("\"32772\"", 4)
+gg.clearResults()
 end
 
 function MEDIATEK25()
@@ -540,7 +545,26 @@ gg.editAll("240", gg.TYPE_FLOAT)
 end
 
 function NIN()
-gg.alert("Maintance Fixing Bugs")
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("1;35;443;55;0.57357645035", 16, false, 536870912, 0, -1)
+gg.searchNumber("1", 16, false, 536870912, 0, -1)
+gg.getResults(500)
+gg.editAll("3", 16)
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("3;35;443;55;0.57357645035", 16, false, 536870912, 0, -1)
+gg.searchNumber("443", 16, false, 536870912, 0, -1)
+gg.getResults(500)
+gg.editAll("2500", 16)
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("300;300;60000;600;8192;0;2;0;0;2048;0;300;0;0.05::120", 16, false, 536870912, 0, -1)
+gg.searchNumber("0;0.05", 16, false, 536870912, 0, -1)
+gg.getResults(500)
+gg.editAll("1000", 16)
+gg.clearResults()
+end
 end
 
 function SSP()
