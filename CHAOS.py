@@ -7,12 +7,12 @@ import os, time, sys
 print "Nama Tools: ANTI BAN ON OFF Data OTOMATIS"
 print "@UE4Esports\n"
 def offon():
-    os.system('su -c "svc data enable"')
+    os.system('su -c "svc wifi enable"')
     time.sleep(1)
-    print("Data On")
+    print("Wifi On")
     time.sleep(240)
-    os.system('su -c "svc data disable"')
-    print("Data Off")
+    os.system('su -c "svc wifi disable"')
+    print("Wifi Off")
     return offon()
 
 if __name__ == '__main__':
